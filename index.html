@@ -10,6 +10,7 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <div id="app">{{ message }}</div>
+    <h1>{{header}}</h1>
 
     <script>
       const { createApp } = Vue;
@@ -18,6 +19,9 @@
         data() {
           return {
             message: "Hello Vue!",
+            header: "CS50,风暴英雄，要火啊".concat(
+              "this is cs50, i am david malen"
+            ),
           };
         },
       }).mount("#app");
